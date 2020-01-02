@@ -1,0 +1,227 @@
+---
+title: "run_analysis_codebook"
+author: "Libby Jennings"
+date: "02/01/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# CODEBOOK - run_analysis output
+All columns except group, subject and activity are measured variables. These are given as averages of a number of measurements of each subject performing each activity.
+
+group - indicates whether data is part of the training or testing data
+        1. training
+        2. test
+
+subject - indicates the number of the person performing the activities
+        Numbers 1 to 30 (inc)
+
+activity - the activity being performed by the subject <br>
+        1. laying <br>
+        2. sitting <br>
+        3. standing <br>
+        4. walking <br>
+        5. walkupstairs <br> 
+        6. walkdownstairs <br>
+        
+MeanBodyAccTimeX - normalised time domain signal for the mean body accelerometer feature in the X dimension <br>
+        Numeric -1 to 1
+
+MeanBodyAccTimeY - normalised time domain signal for the mean body accelerometer feature in the Y dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyAccTimeZ - normalised time domain signal for the mean body accelerometer feature in the Z dimension <br>
+        Numeric -1 to 1
+        
+StdBodyAccTimeX - normalised time domain signal for the standard deviation of body accelerometer feature in the X dimension <br>
+        Numeric -1 to 1
+        
+StdBodyAccTimeY - normalised time domain signal for the standard deviation of body accelerometer feature in the Y dimension <br>
+        Numeric -1 to 1
+        
+StdBodyAccTimeZ - normalised time domain signal for the standard deviation of body accelerometer feature in the Z dimension <br>
+        Numeric -1 to 1
+        
+MeanGravityAccTimeX - normalised time domain signal for the mean gravity accelerometer feature in the X dimension <br>
+        Numeric -1 to 1
+        
+MeanGravityAccTimeY - normalised time domain signal for the mean gravity accelerometer feature in the Y dimension <br>
+        Numeric -1 to 1
+        
+MeanGravityAccTimeZ - normalised time domain signal for the mean gravity accelerometer feature in the Z dimension <br>
+        Numeric -1 to 1
+        
+StdGravityAccTimeX - normalised time domain signal for the standard deviation of the gravity accelerometer feature in the X dimension <br>
+        Numeric -1 to 1
+        
+StdGravityAccTimeY normalised time domain signal for the standard deviation of the gravity accelerometer feature in the Y dimension <br>
+        Numeric -1 to 1
+        
+StdGravityAccTimeZ - normalised time domain signal for the standard deviation of the gravity accelerometer feature in the Z dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyAccJerkTimeX - normalised time domain signal for the mean body accelerometer jerk feature in the X dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyAccJerkTimeY - normalised time domain signal for the mean body accelerometer jerk feature in the Y dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyAccJerkTimeZ - normalised time domain signal for the mean body accelerometer jerk feature in the Z dimension <br>
+        Numeric -1 to 1
+        
+StdBodyAccJerkTimeX - standard deviation of the normalised time domain signal for the body accelerometer jerk feature in the X dimension <br>
+        Numeric -1 to 1
+        
+StdBodyAccJerkTimeY - standard deviation of the normalised time domain signal for the body accelerometer jerk feature in the Y dimension <br>
+        Numeric -1 to 1
+StdBodyAccJerkTimeZ - standard deviation of the normalised time domain signal for the body accelerometer jerk feature in the Z dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyGyroTimeX - normalised time domain signal for the mean body gyroscope feature in the X dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyGyroTimeY - normalised time domain signal for the mean body gyroscope feature in the Y dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyGyroTimeZ - normalised time domain signal for the mean body gyroscope feature in the Z dimension<br>
+        Numeric -1 to 1
+        
+StdBodyGyroTimeX - standard deviation of the normalised time domain signal for the body gyroscope feature in the X dimension <br>
+        Numeric -1 to 1
+        
+StdBodyGyroTimeY - standard deviation of the normalised time domain signal for the body gyroscope feature in the X dimension <br>
+        Numeric -1 to 1
+        
+StdBodyGryoTimeZ - standard deviation of the normalised time domain signal for the body gyroscope feature in the X dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyGyroJerkTimeX - normalised time domain signal for the mean body gyroscope jerk feature in the X dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyGyroJerkTimeY - normalised time domain signal for the mean body gyroscope feature in the Y dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyGyroJerkTimeZ - normalised time domain signal for the mean body gyroscope feature in the Z dimension <br>
+        Numeric -1 to 1
+        
+StdBodyGyroJerkTimeX - standard deviation of the normalised time domain signal for the body gyroscope feature in the X dimension <br>
+        Numeric -1 to 1
+StdBodyGyroJerkTimeY - standard deviation of the normalised time domain signal for the body gyroscope feature in the Y dimension <br>
+        Numeric -1 to 1
+        
+StdBodyGyroJerkTimeZ - standard deviation of the normalised time domain signal for the body gyroscope feature in the Z dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyAccMagTime - normalised time domain signal for the mean magnitude measurement of the body acceleromenter feature <br>
+        Numeric -1 to 1
+        
+StdBodyAccMagTime - standard deviation normalised time domain signal for the magnitude measurement of the body acceleromenter feature <br>
+        Numeric -1 to 1
+        
+MeanGravityAccMagTime - normalised time domain signal for the mean magnitude measurement of the gravity acceleromenter feature <br>
+        Numeric -1 to 1
+        
+StdGravityAccMagTime - standard deviation of the normalised time domain signal for the magnitude measurement of the gravity acceleromenter feature <br>
+        Numeric -1 to 1
+        
+MeanBodyAccJerkMagTime - normalised time domain signal for the mean magnitude measurement of the body acceleromenter jerk feature <br>
+        Numeric -1 to 1
+        
+StdBodyAccJerkMagTime - standard deviation of the normalised time domain signal for the magnitude measurement of the body acceleromenter jerk feature <br>
+        Numeric -1 to 1
+        
+MeanBodyGyroMagTime - normalised time domain signal for the mean magnitude measurement of the body gyroscope feature <br>
+        Numeric -1 to 1
+        
+StdBodyGyroMagTime -  standard deviation of normalised time domain signal for the magnitude measurement of the body gyroscope feature <br>
+        Numeric -1 to 1
+        
+MeanBodyGyroJerkMagTime - normalised time domain signal for the mean magnitude measurement of the body gyroscope jerk feature <br>
+        Numeric -1 to 1
+        
+StdBodyGyroJerkMagTime - normalised time domain signal for the mean magnitude measurement of the body gyroscope jerk feature <br>
+        Numeric -1 to 1
+        
+MeanBodyAccFreqX - normalised frequency domain signal for the mean body accelerometer feature in the X dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyAccFreqY - normalised frequency domain signal for the mean body accelerometer feature in the Y dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyAccFreqZ - normalised frequency domain signal for the mean body accelerometer feature in the Z dimension <br>
+        Numeric -1 to 1
+        
+StdBodyAccFreqX - standard deviation of the normalised frequency domain signal for the body accelerometer feature in the X dimension <br>
+        Numeric -1 to 1
+        
+StdBodyAccFreqY - standard deviation of the normalised frequency domain signal for the body accelerometer feature in the Y dimension <br>
+        Numeric -1 to 1
+        
+StdBodyAccFreqZ - standard deviation of the normalised frequency domain signal for the body accelerometer feature in the Z dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyAccJerkFreqX - normalised frequency domain signal for the mean body accelerometer jerk feature in the X dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyAccJerkFreqY - normalised frequency domain signal for the mean body accelerometer jerk feature in the Y dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyAccJerkFreqZ - normalised frequency domain signal for the mean body accelerometer jerk feature in the Z dimension <br>
+        Numeric -1 to 1
+        
+StdBodyAccJerkFreqX - standard deviation of the normalised frequency domain signal for the body accelerometer jerk feature in the X dimension <br>
+        Numeric -1 to 1
+        
+StdBodyAccJerkFreqY - standard deviation of the normalised frequency domain signal for the body accelerometer jerk feature in the Y dimension <br>
+        Numeric -1 to 1
+        
+StdBodyAccJerkFreqZ - standard deviation of the normalised frequency domain signal for the body accelerometer jerk feature in the Z dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyGyroFreqX - normalised frequency domain signal for the mean body gyroscope feature in the X dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyGyroFreqY - normalised frequency domain signal for the mean body gyroscope feature in the Y dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyGyroFreqZ - normalised frequency domain signal for the mean body gyroscope feature in the Z dimension <br>
+        Numeric -1 to 1
+        
+StdBodyGyroFreqX - standard deviation of the normalised frequency domain signal for the body gyroscope feature in the X dimension <br>
+        Numeric -1 to 1
+        
+StdBodyGyroFreqY - standard deviation of the normalised frequency domain signal for the body gyroscope feature in the Y dimension <br>
+        Numeric -1 to 1
+        
+StdBodyGryoFreqZ - standard deviation of the normalised frequency domain signal for the body gyroscope feature in the Z dimension <br>
+        Numeric -1 to 1
+        
+MeanBodyAccMagFreq - normalised frequency domain signal for the mean body accelerometer feature <br>
+        Numeric -1 to 1
+        
+StdBodyAccMagFreq - standard deviation of the normalised frequency domain signal for the body accelerometer feature <br>
+        Numeric -1 to 1
+        
+MeanBodyAccJerkMagFreq - normalised frequency domain signal for the mean body accelerometer jerk feature <br>
+        Numeric -1 to 1
+        
+StdBodyAccJerkMagFreq - standard deviation of the normalised frequency domain signal for the body accelerometer jerk feature <br>
+        Numeric -1 to 1
+        
+MeanBodyGyroMagFreq - normalised frequency domain signal for the mean body gyroscope feature <br>
+        Numeric -1 to 1
+        
+StdBodyGyroMagFreq - standard deviation of the normalised frequency domain signal for the body gyroscope feature <br>
+        Numeric -1 to 1
+        
+MeanBodyGyroJerkMagFreq - normalised frequency domain signal for the mean body gyroscope jerk feature <br>
+        Numeric -1 to 1
+        
+StdBodyGyroJerkMagFreq - standard deviation of the normalised frequency domain signal for the body gyroscope jerk feature <br>
+        Numeric -1 to 1
+
+
+
