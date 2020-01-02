@@ -24,3 +24,5 @@ To give variables descriptive titles, a separate csv file was created with old n
 
 ## Generating a new dataframe of mean values
 In the next step, the script generates a new dataframe that gives the mean values of each variable for each subject performing the different activities. The resulting dataframe (df) has the same column names as the previous, with one row per unique subject and activity combination. This is written into a .txt file. 
+
+Column names are clear and readable with reference to the codebook. There is one variable per column. 
